@@ -22,6 +22,8 @@
         $response = curl_exec($curl);
         $err = curl_error($curl);
         curl_close($curl);
+
+        // echo $response;
         $response = json_decode($response);
         return $response;
     }
@@ -71,6 +73,7 @@
 	            }]
 	        });
 	        chart.render();
+
 	    }
 	</script>
 </head>
@@ -195,7 +198,8 @@
                 </div>
                 <a href="#demo" class="btn btn-default" data-toggle="collapse" style="width: 100%;">Show more acitivity</a>
                 <dir id="demo" class="collapse">
-                    <img src="pictures/ny.jpg" style="width: 100%; height: 150px;">
+                    <!-- <img src="pictures/ny.jpg" style="width: 100%; height: 150px;border-radius: 4px;"> -->
+                    <p>Akan sangat senang apabila saya bisa bergabung dengan pasarb2b.com. Namun andai tidak demikian, saya mengucapkan banyak terimakasih atas kesempatan pada saya hingga saat ini. Saya akan senantiasa belajar untuk meningkatkan kemampuan saya, kedepan. Thanks a lot.</p>
                 </dir>
             </div>
         </div>
